@@ -29,7 +29,7 @@ This will launch a new Windows Terminal window with the predefined workspace lay
 
 If you want faster prompt writing, install [Wispr Flow](https://wisprflow.ai/). It is a voice-to-text tool that works well for longer prompts, quick edits, and even hands-free terminal input.
 
-## Codex on Windows (UTF-8 fix)
+## Codex on Windows
 
 If you use Codex on Windows, I recommend you to force UTF‑8 encoding in PowerShell. This prevents issues with accented characters and improves reliability when working with non‑ASCII text.
 
@@ -39,7 +39,9 @@ If you use Codex on Windows, I recommend you to force UTF‑8 encoding in PowerS
 winget install --id Microsoft.PowerShell --source winget
 ```
 
-Then set PowerShell 7 as your default terminal shell.
+### Set PowerShell 7 as your default terminal shell
+
+Open Windows Terminal → Settings `(Ctrl + ,)` → Startup → set Default profile to PowerShell (7.x), then click Save.
 
 ### Update your PowerShell profile
 
