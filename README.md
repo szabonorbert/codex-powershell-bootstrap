@@ -1,17 +1,14 @@
 # codex-powershell-bootstrap
 
-PowerShell script that boots a ready-to-use Codex development workspace
-in Windows Terminal.
-
-It opens a preconfigured multi-pane layout so you can work with Codex
+PowerShell script that boots a ready-to-use Codex development workspace in Windows Terminal. It opens a preconfigured multi-pane layout so you can work with Codex
 and your project simultaneously.
 
 Typical layout:
 
--   Codex console
--   Second Codex console
--   Utility shell
--   Project dev server (`npm run dev`)
+- Codex console
+- Second Codex console
+- Project dev server (`npm run dev`)
+- Utility shell for extra commands (e.g., `npm install`)
 
 This allows you to keep AI interaction, development server, and shell
 tools visible at the same time.
@@ -26,18 +23,15 @@ Copy the ```dev.ps1``` file to your repository and run:
 .\dev.ps1
 ```
 
-This will launch a new Windows Terminal window with the predefined workspace layout. Feel free to modify the script to adjust pane sizes, commands, or add
-additional tools.
+This will launch a new Windows Terminal window with the predefined workspace layout. Feel free to modify the script to adjust pane sizes, commands, or add additional tools.
 
 ### More speed
 
-If you want faster prompt writing, install [Wispr Flow](https://wisprflow.ai/). It is a voice-to-text tool that works well for longer prompts, quick edits,
-and hands-free input while coding.
+If you want faster prompt writing, install [Wispr Flow](https://wisprflow.ai/). It is a voice-to-text tool that works well for longer prompts, quick edits, and even hands-free terminal input.
 
 ## Codex on Windows (UTF-8 fix)
 
-If you use Codex on Windows, I recommend you to force UTF‑8 encoding in PowerShell. This prevents issues with accented characters and improves reliability
-when working with non‑ASCII text.
+If you use Codex on Windows, I recommend you to force UTF‑8 encoding in PowerShell. This prevents issues with accented characters and improves reliability when working with non‑ASCII text.
 
 ### Install PowerShell 7
 
@@ -70,8 +64,7 @@ After this, Codex will display UTF‑8 text more reliably.
 
 ### Windows Terminal maximize mode
 
-As a developer, you naturally want to automate
-everything, including launching the terminal maximized:
+As a developer, you naturally want to automate everything, including launching the terminal maximized:
 
 ```powershell
 wt -M
