@@ -16,6 +16,8 @@ Typical layout:
 This allows you to keep AI interaction, development server, and shell
 tools visible at the same time.
 
+![Workspace screenshot](./scrnsht.png)
+
 ## Usage
 
 Copy the ```dev.ps1``` file to your repository and run:
@@ -24,14 +26,17 @@ Copy the ```dev.ps1``` file to your repository and run:
 .\dev.ps1
 ```
 
-This will launch a new Windows Terminal window with the predefined
-workspace layout. Feel free to modify the script to adjust pane sizes, commands, or add
+This will launch a new Windows Terminal window with the predefined workspace layout. Feel free to modify the script to adjust pane sizes, commands, or add
 additional tools.
+
+### More speed
+
+If you want faster prompt writing, install [Wispr Flow](https://wisprflow.ai/). It is a voice-to-text tool that works well for longer prompts, quick edits,
+and hands-free input while coding.
 
 ## Codex on Windows (UTF-8 fix)
 
-If you use Codex on Windows, I recommend you to force UTF‑8 encoding
-in PowerShell. This prevents issues with accented characters and improves reliability
+If you use Codex on Windows, I recommend you to force UTF‑8 encoding in PowerShell. This prevents issues with accented characters and improves reliability
 when working with non‑ASCII text.
 
 ### Install PowerShell 7
@@ -61,22 +66,18 @@ try { $global:OutputEncoding    = [System.Text.Encoding]::UTF8 } catch {}
 
 After this, Codex will display UTF‑8 text more reliably.
 
-## Notes
+## Dev notes
 
-### Windows Terminal fullscreen
+### Windows Terminal maximize mode
 
-It would be convenient to launch Windows Terminal directly in fullscreen
-using:
+As a developer, you naturally want to automate
+everything, including launching the terminal maximized:
 
-    wt -M
+```powershell
+wt -M
+```
 
-However, in this setup the Windows Terminal pane manager becomes
-**non‑deterministic** when `-M` is used. Under Windows 11 I experienced inconsistent pane behavior and layout errors when the workspace was created in maximized mode.
-
-For this reason the fullscreen launch option was intentionally **not
-used**.
-
-⚠ NOTE: `wt -M` (maximize) is unreliable in this setup.
+However, in this setup the Windows Terminal pane manager becomes **non-deterministic** when -M is used. On Windows 11, I experienced inconsistent pane behavior and layout errors when the workspace was created in maximized mode. For this reason, the maximized launch option is **intentionally not used**.
 
 ## License
 
