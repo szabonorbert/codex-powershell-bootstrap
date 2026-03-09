@@ -1,4 +1,4 @@
-# codex-powershell-bootstrap
+# Codex PowerShell bootstrap
 
 PowerShell script that boots a ready-to-use Codex development workspace in Windows Terminal. It opens a preconfigured multi-pane layout so you can work with Codex
 and your project simultaneously.
