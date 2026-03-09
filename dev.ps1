@@ -1,6 +1,3 @@
-# NOTE: wt -M (maximize) is unreliable in this setup.
-# Norbert Szabo — 2026-03-06 23:03
-
 $dir = (Get-Location).Path
 wt -w new `
         new-tab `
